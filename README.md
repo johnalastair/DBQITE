@@ -21,9 +21,11 @@ General Matrix Definitions:
 - Complex conjugate: All imaginary components are replaced by their conjugates
 - Dagger/Conjugate transpose: Transpose + replace with conjugates
 - Hermitian Matrices: Matrices that are equal to their conjugate transposes
+  - Hamiltonians are always Hermitian
+- Determinants are denoted by det() and given by the equation. Matrices with no inverses have a det of 0.
 
 Bases:
-The 'coordinate system' or realm in which the matrix exists. It determines the physical manifestation of the matrix.
+The 'coordinate system' in which the matrix exists. It determines the physical manifestation of the matrix.
 In 2D space, the base is x and y axis, or i and j directions
 For qubits, the computational basis is used, connoting that (1,0) represents 'spin up' while (0,1) represents 'spin down'
 
@@ -35,5 +37,21 @@ Matrix-Matrix
 Matrix-Vector
 
 Eigenvectors: An eigenvector of a matrix is a vector that does not change direction when multiplied by said matrix. It is only scaled by a factor lambda, the corresponding eigenvalue of that eigenvector. 
-Av = (lambda)v
+
+
+$A\mathbf{v} = \lambda\mathbf{v}$
+
+
+Matrix exponentials:
+
+
+Using the Maclaurin expansion of an exponential, the exponential of a diagonal matrix is simply:
+
+For non-diagonal matrices, 
+
+
+
+
+
+
 
