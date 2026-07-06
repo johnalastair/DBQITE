@@ -22,7 +22,33 @@ General Matrix Definitions:
 - Dagger/Conjugate transpose: Transpose + replace with conjugates
 - Hermitian Matrices: Matrices that are equal to their conjugate transposes
   - Hamiltonians are always Hermitian
-- Determinants are denoted by det() and given by the equation. Matrices with no inverses have a det of 0.
+- Determinants are denoted by det() and given by the equation:
+
+
+$$
+\det \begin{bmatrix}
+a & b \\
+c & d
+\end{bmatrix} = \begin{vmatrix}
+a & b \\
+c & d
+\end{vmatrix} = ad - bc
+$$
+
+Matrices with no inverses have a det of 0.
+
+  
+- Unitary Matrices: Inverse is equal to the dagger
+- Inverse Matrices:
+
+  
+$$
+A^{-1} = \frac{1}{ad-bc}
+\begin{pmatrix}
+d & -b \\
+-c & a
+\end{pmatrix}
+$$
 
 Bases:
 The 'coordinate system' in which the matrix exists. It determines the physical manifestation of the matrix.
@@ -33,8 +59,38 @@ For qubits, the computational basis is used, connoting that (1,0) represents 'sp
 
 
 Matrix multipication:
-Matrix-Matrix
-Matrix-Vector
+
+Matrix-Matrix:
+
+$$
+\begin{pmatrix}
+a_{11} & a_{12} \\
+a_{21} & a_{22}
+\end{pmatrix}
+\begin{pmatrix}
+b_{11} & b_{12} \\
+b_{21} & b_{22}
+\end{pmatrix} = \begin{pmatrix}
+a_{11}b_{11} + a_{12}b_{21} & a_{11}b_{12} + a_{12}b_{22} \\
+a_{21}b_{11} + a_{22}b_{21} & a_{21}b_{12} + a_{22}b_{22}
+\end{pmatrix}
+$$
+
+Matrix-Vector:
+
+$$
+\begin{pmatrix}
+a_{11} & a_{12} \\
+a_{21} & a_{22}
+\end{pmatrix}
+\begin{pmatrix}
+x_1 \\
+x_2
+\end{pmatrix} = \begin{pmatrix}
+a_{11}x_1 + a_{12}x_2 \\
+a_{21}x_1 + a_{22}x_2
+\end{pmatrix}
+$$
 
 Eigenvectors: An eigenvector of a matrix is a vector that does not change direction when multiplied by said matrix. It is only scaled by a factor lambda, the corresponding eigenvalue of that eigenvector. 
 
