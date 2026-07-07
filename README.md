@@ -20,25 +20,31 @@ General Matrix Definitions:
 - Transpose: Rows become columns, columns become rows.
 - Complex conjugate: All imaginary components are replaced by their conjugates
 - Dagger/Conjugate transpose: Transpose + replace with conjugates
+- Trace: Sum of diagonal components. Tr(AB)=Tr(BA)
 - Hermitian Matrices: Matrices that are equal to their conjugate transposes
   - Hamiltonians are always Hermitian
 - Determinants are denoted by det() and given by the equation:
 
 
 $$
-\det \begin{bmatrix}
+\det \begin{pmatrix}
 a & b \\
 c & d
-\end{bmatrix} = \begin{vmatrix}
+\end{pmatrix} = \begin{vmatrix}
 a & b \\
 c & d
 \end{vmatrix} = ad - bc
 $$
 
-Matrices with no inverses have a det of 0.
-
+  Matrices with no inverses have a det of 0.
+  For a 3x3 matrix, each element in the top row is multiplied by the 2x2 matrix formed by the elements not in the same column. Then, the resulting number formed by the middle element is subtracted while the other 2 are summed. 
+  If 2 rows of a matrix are swapped, the determinant is multiplied by -1
+  If any row is multiplied by $\lambda$, the determinant is multiplied by $\lambda$
   
+
+- Minor: The determinant of the matrix that is obtained by removing the column and row of a selected element
 - Unitary Matrices: Inverse is equal to the dagger
+- Orthogonal Matrices: Transpose is equal to the inverse
 - Inverse Matrices:
 
   
