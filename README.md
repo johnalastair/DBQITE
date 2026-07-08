@@ -109,7 +109,23 @@ Matrix exponentials:
 
 Using the Maclaurin expansion of an exponential, the exponential of a diagonal matrix is simply:
 
-For non-diagonal matrices, 
+$$D^n = \begin{bmatrix} \lambda_1^n & 0 & 0 \\ 0 & \lambda_2^n & 0 \\ 0 & 0 & \lambda_3^n \end{bmatrix}$$
+
+However, for non-diagonal matrices, $$A^n$$ is less simple to evaluate since the elements cannot simply be raised to the nth power. Hence, diagonalisation is used to isolate a diagonal matrix. 
+
+
+QM notation:
+
+Quantum superposition notation:
+[INSERT EQUATION]
+
+a and b are probability amplitudes, denoting the probability of each ket being the case. 
+
+Quantum evolution as a function of time:
+U is used to demonstrate how a state evolves over time. 
+
+
+
 
 
 
