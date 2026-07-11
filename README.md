@@ -8,13 +8,12 @@ https://arxiv.org/abs/2412.04554
 https://mathstodon.xyz/@Marekgluza/113621100092525571
 
 
-DEFINITIONS
 
-Vectors: 
+## Vectors: 
 - A column vector is denoted by a ket
 - A row vector is denoted by a bra
 
-General Matrix Definitions:
+## General Matrix Definitions:
 - Transpose: Rows become columns, columns become rows.
 - Complex conjugate: All imaginary components are replaced by their conjugates
 - Dagger/Conjugate transpose: Transpose + replace with conjugates
@@ -62,7 +61,7 @@ For qubits, the computational basis is used, connoting that (1,0) represents 'sp
 
 
 
-Matrix multipication:
+## Matrix multipication:
 
 Matrix-Matrix:
 
@@ -103,7 +102,7 @@ $A\mathbf{v} = \lambda\mathbf{v}$
 
 where v is the eigenvector, A is the matrix and $$\lambda$$ is the eigenvalue
 
-Matrix exponentials:
+## Matrix exponentials:
 
 
 Using the Maclaurin expansion of an exponential, the exponential of a diagonal matrix is simply:
@@ -172,12 +171,22 @@ Then, for each eigenvalue we solve the equation $$(A - \lambda I)\vec{v} = 0$$ t
 With D and P solved, the exponential $$e^A = P e^D P^{-1}$$ can be solved as $$e^D$$ can now be easily expressed as a taylor series.
 
 
+## Matrix Transformations
+
+Active vs Passive transformations:
+
+Active involves the object moving to a different space
+- Eg Applying a matrix to a vector to attain a different vector is a active transformation 
+
+Passive involves the coordinate system moving/changing while the object remains unchanged
+- Eg ct' and x' axes in spacetime diagrams
+- Mathematically, the basis vectors and transformed by a transformation matrix P and the components of the position vector representing an object are tranformed by the $P^-1$, the inverse matrix of P.
+- 
 
 
 
 
-
-QM notes (from the Euler slides):
+## QM notes (from the Euler slides):
 
 Quantum superposition notation:
 $$|v\rangle = a|0\rangle + b|1\rangle$$
@@ -190,7 +199,7 @@ $$U = e^{itY} = \sum_{n=0}^{\infty} \frac{1}{n!} (it)^n Y^n$$
 
 U is used to demonstrate how a state evolves over time. 
 
-Using the matrix Y, the expression for the evolution of a bit of initial state 0 simplifies to 
+Using the matrix $Y^2 = I$, the expression for the evolution of a bit of initial state 0 simplifies to 
 $$e^{itY} |0\rangle = \cos(t) |0\rangle + \sin(t) |1\rangle$$
 
 The 2 coefficients will be equal at  $$t=\pi/4$$, indicating a state of superposition where the probability of each state is equal.
