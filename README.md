@@ -164,7 +164,7 @@ Since the LHS must be irreversible to find eigenvectors (didn't fully understand
 
 $$\det(A - \lambda I) = 0$$
 
-From here, we solve for the eigenvalues $$\lambda$$. A 2x2 matrix would have 2 possible values for $$\lambda$$, giving the matrix D. 
+From here, we solve for the eigenvalues $$\lambda$$. A 2x2 matrix would have 2 possible values for $$\lambda$$, giving the diagonal matrix D. 
 
 Then, for each eigenvalue we solve the equation $$(A - \lambda I)\vec{v} = 0$$ to get the eigenvectors that make up P.
 
@@ -177,7 +177,7 @@ With D and P solved, the exponential $$e^A = P e^D P^{-1}$$ can be solved as $$e
 
 
 
-QM notes (from the euler slides):
+QM notes (from the Euler slides):
 
 Quantum superposition notation:
 $$|v\rangle = a|0\rangle + b|1\rangle$$
@@ -186,6 +186,7 @@ where a and b are probability amplitudes, denoting the probability of each ket b
 
 Quantum evolution as a function of time:
 
+$$U = e^{itY} = \sum_{n=0}^{\infty} \frac{1}{n!} (it)^n Y^n$$
 
 U is used to demonstrate how a state evolves over time. 
 
